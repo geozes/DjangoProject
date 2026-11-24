@@ -24,4 +24,7 @@ urlpatterns = [
         TokenRefreshView.as_view(),
         name='token_refresh'
     ),
+
+     # User registration
+    path('api/v1/auth/', include('apps.accounts.urls')),
 ]
