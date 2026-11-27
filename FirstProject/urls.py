@@ -27,4 +27,10 @@ urlpatterns = [
 
      # User registration
     path('api/v1/auth/', include('apps.accounts.urls')),
+    #categories
+    path('api/v1/', include('apps.categories.urls')),
+    #tasks
+    path('api/v1/', include('apps.tasks.urls')),
+    #dashboard
+    path('api/v1/dashboard/', include('apps.dashboard.urls')),
 ]
